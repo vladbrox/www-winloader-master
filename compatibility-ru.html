@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Совместимость</title>
+    
+    <link rel="stylesheet" href="style.css"/>
+    
+    <link rel="shortcut icon" href="icons/compatibility.png" />
+    
+    <style>
+    	.game-card {
+    flex: 0 1 200px; /* Распределить одинаковую ширину на всех экранах */
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+        
+        .green {
+            background-color: #35D578;
+        }
+
+        .yellow {
+            background-color: #FEA729;
+        }
+        
+        .red {
+            background-color: #FD4B5B;
+        }
+        
+        .game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 800px; /* Определите максимальную ширину для центрирования и ограничения размера на больших экранах */
+}
+
+        </style>
+</head>
+
+<body>
+    <header>
+        <li><a href="index.html"><h1>WinLoader</h1></a></li>
+        <p>Эмулятор Windows на Android</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="download.html">Скачать</a></li>
+            <li><a href="wiki.html">Вики</a></li>
+            <li><a href="compatibility-ru.html"><u>Совместимость</u></a></li>
+        </ul>
+    </nav>
+
+    <div class="game-container">
+    <div class="game-card green">
+        <h2>NFS Underground 2</h2>
+    </div>
+
+    <div class="game-card yellow">
+        <h2>Mafia 1</h2>
+    </div>
+
+    <div class="game-card red">
+        <h2>Assassins Creed 1</h2>
+    </div>
+</div>
+
+
+    <footer>
+        <p>© 2024 WinLoader. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect...</title>
+    <script>
+        // Получаем язык пользователя
+        var userLanguage = navigator.language || navigator.userLanguage;
+
+        // Проверяем, является ли язык русским
+        if(userLanguage === "ru" || userLanguage === "ru-RU") {
+            // Если русский язык, перенаправляем на index-ru.html
+            window.location.href = "home.html";
+        } else {
+            // Если другой язык, перенаправляем на index-en.html
+            window.location.href = "home.html";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirect...</p>
+</body>
+</html>

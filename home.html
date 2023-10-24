@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>Winloader | Главная</title>
+
+    <link rel="shortcut icon" href="icons/favicon.png" />
+
+    <link rel="stylesheet" href="css/bar.css" />
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script>
+      function copyTextToClipboard(text) {
+          var textArea = document.createElement("textarea");
+          textArea.value = text;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand("Copy");
+          textArea.remove();
+          alert("Команда будет скопирована в буфер обмена.");
+      }
+    </script>
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="images/favicon.png" alt=""></i>Winloader
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+      	<ul class="menu_items">
+      		
+      	<li class="item">
+            <a href="install.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-layer"></i>
+              </span>
+              <span class="navlink">Установить</span>
+            </a>
+          </li>
+      	
+          
+          <li class="item">
+            <a href="compatibility.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">Совместимость</span>
+            </a>
+          </li>
+          
+          
+          <li class="item">
+            <a href="wiki.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Вики</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="download.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cloud-upload"></i>
+              </span>
+              <span class="navlink">Скачать игры</span>
+            </a>
+          </li>
+        </ul>
+        
+        <ul class="menu_items">
+        	<li class="item">
+            <a href="home-en.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">Swish language</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> </span>
+            <i class='' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> by vlad</span>
+            <i class=''></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    
+            <h2>Инструкция</h2>
+            <div class="text_item"> по установке Termux-box:</div>
+
+            <div class="text_item">Шаг 1: Установка Termux</div>
+            <div class="text_item">Скачайте и установите приложение Termux с <a href="https://f-droid.org/repo/com.termux_118.apk" target="_blank"><u>f-droid.org</u></a>.</div>
+
+            <div class="text_item">Шаг 2: Установка Termux-x11</div>
+            <div class="text_item">Скачайте и установите приложение Termux-x11 с <a href="https://raw.githubusercontent.com/olegos2/termux-box/main/components/termux-x11-arm64-v8a-debug.apk" target="_blank"><u>GitHub</u></a>.</div>
+
+            <div class="text_item">Шаг 3: Установка Termux-box</div>
+            <div class="text_item">Откройте Termux и выполните следующую команду:</div>
+            <div class="text_item"><a onclick="copyTextToClipboard('curl -s -o x https://raw.githubusercontent.com/olegos2/termux-box/main/install && chmod +x x && ./x')"><code>curl -s -o x https://raw.githubusercontent.com/olegos2/termux-box/main/install && chmod +x x && ./x</code></a></div>
+            <div class="text_item">Может потребоваться также ввести команду</div>
+            <div class="text_item"><a onclick="copyTextToClipboard('termux-setup-storage')"><code>termux-setup-storage</code></a></div>
+            <div class="text_item">Дождитесь завершения установки (время может зависеть от скорости интернета).</div>
+
+            <div class="text_item">Шаг 4: Запуск Termux-box</div>
+            <div class="text_item">Для входа в главное меню Termux-box выполните команду:</div>
+            <div class="text_item"><a onclick="copyTextToClipboard('termux-box')"><code>termux-box</code></a></div>
+            <div class="text_item">Вы можете выбрать режим эмулятора, выполнив соответствующую команду (1, 2, или 3).</div>
+            <div class="text_item">Команда 5 откроет настройки.</div>
+
+            <div class="text_item">Шаг 5: Запуск Termux-x11</div>
+            <div class="text_item">После запуска Termux-x11, выберите "install" в меню "пуск/start".</div>
+            <div class="text_item">Выберите DXVK и turnip для GPU Adreno 610 (или WineD3D и VirGL-Mesa для других процессоров).</div>
+
+            <div class="text_item">GitHub репозиторий: <a href="https://github.com/olegos2/termux-box" target="_blank">github.com/olegos2/termux-box</a></div>
+  </body>
+</html>
