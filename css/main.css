@@ -35,9 +35,10 @@ body {
         }
         main {
             padding: 20px;
-            text-align: center;
-            
+            text-align: start;
+            margin: 50px 60px;
         }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -45,10 +46,13 @@ body {
             text-align: center;
         }
         /* стили для адаптивной верстки */
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 768px) {
             /* стили для смартфонов и планшетов */
+
+        main {
+            padding: 20px;
+            text-align: start;
+            margin: 50px 1px;
+                
         }
-        @media only screen and (min-width: 601px) {
-            /* стили для компьютеров и планшетов */
-        }
-        
+    }
